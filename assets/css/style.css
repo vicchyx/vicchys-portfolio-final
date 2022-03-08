@@ -38,7 +38,6 @@ body {
     flex-wrap: wrap;
     display: flexbox;
     text-align: right;
-    float: right;
     position: relative;
 }
 
@@ -49,7 +48,6 @@ body {
     flex-wrap: wrap;
     display: flexbox;
     text-align: left;
-    float: left;
     position: relative;
 }
 
