@@ -17,7 +17,55 @@
 
 body {
     background-color: #1f2833;
+    display: flex;
+    flex-direction: column;
 }
+
+.australizando img {
+	float: right;
+	margin-left: 1rem;
+    border: 3px solid #13c2bc;
+}
+
+#myProjects p {
+	color: #6d6d6d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+.horiseon img {
+	float: left;
+	margin-right: 1rem;
+    border: 2px solid #fa2998;
+}
+
+.button {
+    background-color: #fa2998;
+    border: 1px solid #f9f472;
+    color: white;
+    padding: 32px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button:hover {
+      background-color: #13c2bc;
+  }
+
+.australizando:after,
+.horiseon:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
 
 .aboutme {
     width: 250px;
@@ -31,27 +79,6 @@ body {
     flex-wrap: wrap;
 }
 
-.australizando {
-    color:#1f2833;
-    font-family: sans-serif;
-    font-size: 15px;
-    flex-wrap: wrap;
-    display: flexbox;
-    text-align: right;
-    position: relative;
-}
-
-.horiseon {
-    color:#6d6d6d;
-    font-family: sans-serif;
-    font-size: 15px;
-    flex-wrap: wrap;
-    display: flexbox;
-    text-align: left;
-    position: relative;
-}
-
-
 main {
     color: #6d6d6d;
     font-family: Arial, Helvetica, sans-serif;
@@ -63,22 +90,6 @@ h1 {
     color:#f9f472;    
 
 }
-
-/* Container holding the image and the text */
-.container {
-    position: relative;
-  }
-  
-  /* Bottom right text */
-  .text-block {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
 h2 {
 font-family:Arial, Helvetica, sans-serif;
@@ -93,7 +104,9 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #fa2998;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #f9f472;
   }
   
   li {
@@ -117,9 +130,42 @@ ul {
     background-color: #13c2bc;
   }
 
+  section {
+    margin-bottom: 0;
+    padding: 20px 10px 40px 10px;
+  }
+  
+  form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+    padding: 10px;
+    border: 2px solid #13c2bc;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+    
+  input, 
+  textarea {
+    box-sizing: border-box;
+    width: 355px;
+    background-color: #1f2833;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 60px;
+  }
+
+
+
   .footer {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
     bottom: 100%;
     width: 100%;
     background-color: #f9f472;
